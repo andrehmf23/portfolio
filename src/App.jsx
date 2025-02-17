@@ -1,14 +1,17 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"                                                              
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import Style from "./pages/Style";
-import Home from "./pages/Home";
-import Parallax from "./pages/Parallax";
 import Blank from "./pages/Blank";
 
 
 const routes = createBrowserRouter([
-    { path: "/", element: <Home/> },
+    { path: "/", element: <About/> },
+    { path: "/about", element: <About/> },
+    { path: "/portfolio", element: <Portfolio/> },
+    { path: "/contact", element: <Contact/> },
     { path: "/style", element: <Style/>},
-    { path: "/parallax", element: <Parallax/>},
     { path: "/blank", element: <Blank/>},
     { path: "/style", element: <Style/>}
 ])

@@ -32,6 +32,14 @@ function Blank(){
   </div>
 </div>
 
+<label class="peer cursor-pointer flex items-center gap-2 mt-2">
+  <input type="checkbox" class="hidden peer" />
+  <span class="text-gray-700">Marque para mostrar</span>
+</label>
+<button class="hidden transition-all not-peer-has-checked:opacity-0 peer-has-checked:block bg-blue-500 text-white px-4 py-2 rounded">
+  Apareço quando marcado
+</button>
+
     </>)
 }
 
