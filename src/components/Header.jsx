@@ -23,19 +23,19 @@ function Header() {
   
           {/* Navigation Links */}
           <a
-            href="/"
+            href="#about"
             className="text-cyan-400 font-bold hover:text-white duration-1000 transform hover:scale-110"
           >
             About
           </a>
           <a
-            href="/portfolio"
+            href="#portfolio"
             className="text-cyan-400 font-bold hover:text-white duration-1000 transform hover:scale-110"
           >
             Portfolio
           </a>
           <a
-            href="/contact"
+            href="#contact"
             className="text-cyan-400 font-bold hover:text-white duration-1000 transform hover:scale-110"
           >
             Contact
