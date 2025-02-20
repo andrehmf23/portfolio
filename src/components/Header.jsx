@@ -1,7 +1,7 @@
 function Header() {
     return (
       <>
-        <div className="w-full fixed top-0 left-0 flex justify-center items-center bg-[#00000037] p-4 h-25 gap-20">
+        <div className="w-full fixed top-0 left-0 flex justify-center items-center bg-gray-950 p-4 h-25 gap-20">
           {/* Logo Icon */}
           <a href="/" className="icon w-12 h-12 absolute left-15 top-5">
           <svg
