@@ -1,52 +1,47 @@
 [
     {
         "code": "c",
-        "name": "text",
-        "time": "x years"
+        "name": "c",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "c++",
+        "name": "c++",
+        "time": "3 years"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "python",
+        "name": "python",
+        "time": "2 years"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "html",
+        "name": "html",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "js",
+        "name": "javascript",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "css",
+        "name": "css",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "java",
+        "name": "java",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "react",
+        "name": "react",
+        "time": "1 year"
     },
     {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
-    },
-    {
-        "code": "c",
-        "name": "text",
-        "time": "x years"
+        "code": "sql",
+        "name": "sql",
+        "time": "1 year"
     }
 ]

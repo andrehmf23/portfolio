@@ -1,8 +1,9 @@
 [
     {
         "date": "2024",
-        "title": "[Experience name]",
-        "subtitle": "[Company name]",
-        "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker."
+        "title": "Desenvolvimento Ludus",
+        "subtitle": "Barão de mauá",
+        "type": "atividade",
+        "description": "Nesse projeto tentamos implementar em grupo um jogo de Xadrez online, tendo em conta a biblioteca React em conjunto com o framework Vite, utilizando as APIs: Express para criação do servidor e a Socket.io para conexão simultânea. Como a implementação foi feita localmente tanto do servidor quanto do banco em MySQL não é possivel ver o funcionamento completo."
     }
 ]

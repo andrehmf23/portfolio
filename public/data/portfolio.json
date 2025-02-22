@@ -1,8 +1,6 @@
 [
     {
-        "img": "OIP"
-    },
-    {
-        "img": "OIP"
+        "img": "Xadrez",
+        "href": "https://ludus-mu.vercel.app/"
     }
 ]

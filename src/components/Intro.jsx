@@ -14,9 +14,9 @@ function Intro() {
           <hr class="h-40 w-0.5"></hr>
 
           <a href="https://github.com/andrehmf23" target="_blank" rel="noopener noreferrer">
-          <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1">
             <g id="SVGRepo_iconCarrier">
-              <title>GitHub Icon</title>
+              <title>GitHub</title>
               <g>
                 <path d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.219-.687-.492v-1.314c0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.059 0-1.12-.388-2.034-1.03-2.752.104-.259.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051-.799-.227-1.655-.341-2.505-.345-.85.004-1.705.118-2.503.345-1.911-1.326-2.75-1.051-2.75-1.051-.543 1.412-.2 2.455-.098 2.714-.64.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.371-.57.262-2.018.715-2.91-.852 0 0-.529-.985-1.533-1.057 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .271-.184.588-.683.493-3.974-1.355-6.839-5.199-6.839-9.729C0 4.59 4.478 0 10 0z"></path>
               </g>
@@ -24,11 +24,10 @@ function Intro() {
           </svg>
           </a>
 
-          <a href="https://github.com/andrehmf23" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/andrehmf23" target="_blank" rel="noopener noreferrer">
             <svg className="h-8 custom-svg-1" viewBox="0 -2 20 20" version="1.1">
               <g id="SVGRepo_iconCarrier">
-                <title>twitter [#154]</title>
-                <desc>Created with Sketch.</desc>
+                <title>Twitter</title>
                 <g id="Page-1">
                   <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)">
                     <g id="icons" transform="translate(56.000000, 160.000000)">
@@ -43,8 +42,7 @@ function Intro() {
           <a href="https://www.linkedin.com/in/andrehmf23/" target="_blank" rel="noopener noreferrer">
             <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1">
               <g id="SVGRepo_iconCarrier">
-                <title>linkedin [#161]</title>
-                <desc>Created with Sketch.</desc>
+                <title>Linkedin</title>
                 <g id="Page-1">
                   <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)">
                     <g id="icons" transform="translate(56.000000, 160.000000)">

@@ -19,9 +19,9 @@ function Header() {
           </a>
   
           {/* Navigation Links */}
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" className="scale">About</a>
+          <a href="#portfolio" className="scale">Portfolio</a>
+          <a href="#contact" className="scale">Contact</a>
         </header>
       </>
     );

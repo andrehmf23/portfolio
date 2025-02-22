@@ -14,8 +14,7 @@ function Footer() {
                         <g id="SVGRepo_bgCarrier"></g>
                         <g id="SVGRepo_tracerCarrier"></g>
                         <g id="SVGRepo_iconCarrier"> 
-                            <title>email [#1573]</title> 
-                            <desc>Created with Sketch.</desc>
+                            <title>Email</title>
                             <g id="Page-1"> 
                                 <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -922.000000)"> 
                                     <g id="icons" transform="translate(56.000000, 160.000000)"> 
@@ -32,8 +31,7 @@ function Footer() {
                 <svg viewBox="-4 0 32 32" version="1.1" className="h-7 custom-svg-2">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier"> 
-                        <title>location</title> 
-                        <desc>Created with Sketch Beta.</desc> 
+                        <title>Location</title>
                         <defs> </defs> 
                         <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage"> 
                             <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)"> 

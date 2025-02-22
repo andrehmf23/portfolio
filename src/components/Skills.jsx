@@ -21,8 +21,8 @@ function Skills() {
             {skills.map((skill) => (
               <div class=" custom-box">
                   <img class="h-20 w-20 m-1" src={`icons-skill/${skill.code}.png`} alt="" />
-                  <span class="font-bold text-xl">HTML</span>
-                  <span class="font-bold text-xl">(0 anos)</span>
+                  <span class="font-bold text-xl uppercase">{skill.name}</span>
+                  <span class="font-bold text-xl">{skill.time}</span>
               </div>
             ))}
             

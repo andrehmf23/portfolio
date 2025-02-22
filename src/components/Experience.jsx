@@ -15,12 +15,12 @@ function Experience() {
     <>
     <div class="flex flex-col ml-10 mr-10 mt-10 items-center justify-center">
         <span class="text-3xl font-bold mb-5">Experience</span>
-        <div class="flex">
+        {data.map((content) => (
+        <>
+        <div class="flex mt-4">
             
             {/* ----------------- Experience Example ----------------- */}
 
-            {data.map((content) => (
-            <>
             <div class="flex flex-row items-start justify-center">
                 <div className="custom-date">
                     <span className="text-sm font-bold">{content.date}</span>
@@ -32,16 +32,16 @@ function Experience() {
             </div>
             <div class="flex flex-col ml-4">
                     <span class="text-2xl font-bold mb-1">{content.title}</span>
-                    <span class="text-[20px] mb-1">{content.subtitle}</span>
+                    <span class="text-[20px] mb-1">{content.subtitle} ({content.type})</span>
                     <span>
                         {content.description}
                     </span>
             </div>
-            </>
-            ))}
             {/* ----------------- Experience End ----------------- */}
 
         </div>
+        </>
+        ))}
     </div>
     </>
   );

@@ -11,6 +11,10 @@ function Portfolio() {
         .catch((err) => console.error("Erro ao carregar JSON:", err));
     }, []);
 
+    const handleClick = () => {
+      window.open("https://github.com/andrehmf23", "_blank"); // Abre em nova aba
+    };
+
   return (
     <>
     <div class="flex flex-col ml-10 mr-10 mt-10 content-center items-center justify-center">
@@ -18,11 +22,12 @@ function Portfolio() {
 
         <div class="flex flex-wrap gap-5 mt-5 justify-items-center">
           {data.map((content) => (
-            <img class="h-80 w-80 object-cover" src={`/imgs-portfolio/${content.img}.png`} alt="" />
+            <a href={`${content.href}`} target="_blank" rel="noopener noreferrer">
+              <img class="h-80 w-80 object-cover" src={`/imgs-portfolio/${content.img}.png`} alt="" />
+            </a>
           ))}
         </div>
-
-        <button class="mt-10 custom-button">View More</button>
+        <button class="mt-10 custom-button" onClick={handleClick}>View More</button>
 
     </div>
     </>
