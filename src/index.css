@@ -32,7 +32,7 @@
 /* Definição de temas claro e escuro */
 @layer base {
   body {
-    @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url("bg.jpg")] bg-repeat bg-[length:1600px] font-mono;
+    @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url("/bg.jpg")] bg-repeat bg-[length:1600px] font-mono;
   }
 
   header {
