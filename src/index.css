@@ -1,72 +1,80 @@
 @import "tailwindcss";
 
-@theme {
-  --animate-wiggle: wiggle 1s ease-in-out infinite;
-  @keyframes wiggle {
-    0%,
-    100% {
-      transform: rotate(-3deg);
-    }
-    50% {
-      transform: rotate(3deg);
-    }
-  }
-}
-
 /* Definição de temas claro e escuro */
 @layer base {
   body {
     @apply bg-gray-100 text-gray-900 transition-colors dark:bg-[url("bg.jpg")] bg-repeat bg-[length:800px] dark:text-gray-100 font-mono;
   }
 
-  h1 {
-    @apply text-4xl font-bold text-blue-700 dark:text-blue-400;
+  header {
+    @apply w-full fixed top-0 left-0 flex justify-center items-center bg-gray-950 p-4 h-25 gap-20 z-100;
   }
 
-  h2 {
-    @apply text-2xl font-semibold text-gray-800 dark:text-gray-300;
+  .filter {
+    @apply absolute inset-0 dark:bg-gray-950/95 h-full;
+  }
+
+  .sub-footer {
+    @apply w-full h-40 bg-gradient-to-b to-gray-950;
+  }
+  
+  footer {
+    @apply w-full flex flex-col justify-center items-center bg-gray-950 p-5 pb-15;
   }
 
   a {
-    @apply text-blue-500 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-400 transition;
+    @apply text-cyan-400 font-bold hover:text-white duration-1000 transform hover:scale-110;
+  }
+  
+  hr {
+    @apply rounded-full bg-cyan-400 border-cyan-400;
   }
 }
 
-/* Botões estilosos */
+
 @layer components {
+
   .custom-button {
-    @apply bg-[#f8f8f8] text-[#29292c] p-2 rounded-lg hover:scale-110 
+    @apply bg-[#f8f8f8] text-[#29292c] p-2 rounded-lg hover:scale-105 
             transition-all duration-1000 
            dark:bg-cyan-400 dark:hover:bg-white
            shadow-md dark:hover:shadow-white/50;
   }
-
+  
   .custom-hover-text {
-    @apply text-5xl font-bold text-cyan-400 hover:text-white transition duration-1000;
+    @apply font-bold text-cyan-400 hover:text-white transition duration-1000;
   }
 
-  .custom-hover-bg {
-    @apply bg-cyan-400 hover:bg-white transition duration-1000;
+  .custom-hover {
+    @apply bg-cyan-400 hover:bg-white hover:scale-110 transition duration-1000;
   }
 
-  .custom-skill-box {
-    @apply bg-[#f8f8f8] text-[#29292c] p-2 rounded-lg hover:scale-110 
-            transition-all duration-1000 
-           dark:bg-cyan-400 dark:hover:bg-white
-           shadow-md dark:hover:shadow-white/50;
+  .custom-box {
+    @apply flex flex-col p-4 h-45 w-45 rounded-2xl justify-center items-center bg-[#f8f8f8] text-[#29292c] hover:scale-105 
+      transition-all duration-1000 dark:bg-cyan-400 dark:hover:bg-white shadow-md dark:hover:shadow-white/50;
+  }
+
+  .custom-date {
+    @apply relative inline-block items-center bg-cyan-500 text-white px-4 py-2 rounded-l-lg before:content-[''] 
+    before:absolute before:-right-2 before:top-1/2 before:-translate-y-1/2 before:w-0 before:h-0 before:border-l-[10px] 
+    before:border-l-cyan-500 before:border-y-[8px] before:border-y-transparent;
+  }
+
+  .custom-contact {
+    @apply flex w-75 border-2 p-3 rounded-lg border-cyan-400 text-cyan-400 text-center items-center justify-center gap-3;
+  }
+
+  .custom-logo {
+    @apply fill-[#26C6DA] hover:fill-white hover:scale-115 transition-all duration-1000;
+  }
+
+  .custom-svg {
+    @apply fill-[#26C6DA];
   }
 }
 
 /* Estrutura flexível */
 @layer utilities {
-  .container {
-    @apply max-w-4xl mx-auto p-6;
-  }
-
-  .card {
-    @apply p-6 rounded-lg shadow-md bg-white dark:bg-gray-800;
-  }
-
   .flex-center {
     @apply flex justify-center items-center;
   }
