@@ -5,25 +5,27 @@ function Intro() {
     {/* ----------------- Intro ----------------- */}
     <div class="flex h-screen gap-4 items-center justify-center pt-20">
         <div class="p-4">
-            <span class="text-4xl font-extralight">I'M <span class="custom-hover-text text-5xl">André HMF</span> <br />Front-end Developer</span>
+            <span class="text-4xl font-extralight">I'M <span class="custom-hover-text text-5xl">André HMF</span> <br />Full Stack Developer</span>
             <br /><button class="mt-3 custom-button">Contact me</button>
         </div>
-        <img class="h-130 rounded-full shadow-amber-50 bg-gray-950/60" src="Im.png" alt="I"/>
+        <img class="h-130 rounded-full shadow-amber-50 bg-gray-950/50" src="Im.png" alt="I"/>
 
         <div class="justify-center items-center flex flex-col gap-5">
           <hr class="h-40 w-0.5"></hr>
 
-          <a href="">
-            <svg className="h-8 custom-svg" viewBox="0 0 32 32" version="1.1">
-              <g id="SVGRepo_iconCarrier">
-                <title>facebook</title>
-                <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path>
+          <a href="https://github.com/andrehmf23" target="_blank" rel="noopener noreferrer">
+          <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_iconCarrier">
+              <title>GitHub Icon</title>
+              <g>
+                <path d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.219-.687-.492v-1.314c0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.059 0-1.12-.388-2.034-1.03-2.752.104-.259.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051-.799-.227-1.655-.341-2.505-.345-.85.004-1.705.118-2.503.345-1.911-1.326-2.75-1.051-2.75-1.051-.543 1.412-.2 2.455-.098 2.714-.64.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.371-.57.262-2.018.715-2.91-.852 0 0-.529-.985-1.533-1.057 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .271-.184.588-.683.493-3.974-1.355-6.839-5.199-6.839-9.729C0 4.59 4.478 0 10 0z"></path>
               </g>
-            </svg>
+            </g>
+          </svg>
           </a>
 
-          <a href="">
-            <svg className="h-8 custom-svg" viewBox="0 -2 20 20" version="1.1">
+          <a href="https://github.com/andrehmf23" target="_blank" rel="noopener noreferrer">
+            <svg className="h-8 custom-svg-1" viewBox="0 -2 20 20" version="1.1">
               <g id="SVGRepo_iconCarrier">
                 <title>twitter [#154]</title>
                 <desc>Created with Sketch.</desc>
@@ -38,8 +40,8 @@ function Intro() {
             </svg>
           </a>
 
-          <a href="">
-            <svg className="h-8 custom-svg" viewBox="0 0 20 20" version="1.1">
+          <a href="https://www.linkedin.com/in/andrehmf23/" target="_blank" rel="noopener noreferrer">
+            <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1">
               <g id="SVGRepo_iconCarrier">
                 <title>linkedin [#161]</title>
                 <desc>Created with Sketch.</desc>
@@ -53,6 +55,7 @@ function Intro() {
               </g>
             </svg>
           </a>
+          
         </div>
     </div>
     {/* ----------------- Intro End ----------------- */}

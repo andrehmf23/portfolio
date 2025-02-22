@@ -10,7 +10,7 @@ function Footer() {
             {/* ----------------- Par ----------------- */}
             <div class="grid grid-cols-2 gap-9 mt-10">
                 <div className="custom-contact">
-                    <svg class="h-7 custom-svg" viewBox="0 -2.5 20 20" version="1.1">
+                    <svg class="h-7 custom-svg-2" viewBox="0 -2.5 20 20" version="1.1">
                         <g id="SVGRepo_bgCarrier"></g>
                         <g id="SVGRepo_tracerCarrier"></g>
                         <g id="SVGRepo_iconCarrier"> 
@@ -29,7 +29,7 @@ function Footer() {
                 </div>
 
                 <div className="custom-contact">
-                <svg viewBox="-4 0 32 32" version="1.1" className="h-7 custom-svg">
+                <svg viewBox="-4 0 32 32" version="1.1" className="h-7 custom-svg-2">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier"> 
                         <title>location</title> 

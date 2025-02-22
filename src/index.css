@@ -3,31 +3,31 @@
 /* Definição de temas claro e escuro */
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-900 transition-colors dark:bg-[url("bg.jpg")] bg-repeat bg-[length:800px] dark:text-gray-100 font-mono;
+    @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url("bg.jpg")] bg-repeat bg-[length:800px] font-mono;
   }
 
   header {
-    @apply w-full fixed top-0 left-0 flex justify-center items-center bg-gray-950 p-4 h-25 gap-20 z-100;
+    @apply bg-[#d0d0d0] dark:bg-gray-950 w-full fixed top-0 left-0 flex justify-center items-center p-4 h-25 gap-20 z-100;
   }
 
   .filter {
-    @apply absolute inset-0 dark:bg-gray-950/95 h-full;
+    @apply bg-white/95 dark:bg-gray-950/95 absolute inset-0 h-full;
   }
 
   .sub-footer {
-    @apply w-full h-40 bg-gradient-to-b to-gray-950;
+    @apply to-[#d0d0d0] dark:to-gray-950 w-full h-40 bg-gradient-to-b;
   }
   
   footer {
-    @apply w-full flex flex-col justify-center items-center bg-gray-950 p-5 pb-15;
+    @apply bg-[#d0d0d0] dark:bg-gray-950 w-full flex flex-col justify-center items-center p-5 pb-15;
   }
 
   a {
-    @apply text-cyan-400 font-bold hover:text-white duration-1000 transform hover:scale-110;
+    @apply text-white hover:text-black dark:text-cyan-400 dark:hover:text-white font-bold duration-1000 transform hover:scale-110;
   }
   
   hr {
-    @apply rounded-full bg-cyan-400 border-cyan-400;
+    @apply bg-[#d0d0d0] border-[#d0d0d0] dark:bg-cyan-400 dark:border-cyan-400 rounded-full;
   }
 }
 
@@ -35,41 +35,43 @@
 @layer components {
 
   .custom-button {
-    @apply bg-[#f8f8f8] text-[#29292c] p-2 rounded-lg hover:scale-105 
-            transition-all duration-1000 
-           dark:bg-cyan-400 dark:hover:bg-white
-           shadow-md dark:hover:shadow-white/50;
+    @apply bg-[#d0d0d0] text-black dark:hover:shadow-white/50 dark:bg-cyan-400 dark:hover:bg-white 
+    p-2 rounded-lg hover:scale-105 transition-all duration-1000 shadow-md;
   }
   
   .custom-hover-text {
-    @apply font-bold text-cyan-400 hover:text-white transition duration-1000;
+    @apply text-[#d0d0d0] hover:text-black dark:text-cyan-400 dark:hover:text-white font-bold transition duration-1000;
   }
 
   .custom-hover {
-    @apply bg-cyan-400 hover:bg-white hover:scale-110 transition duration-1000;
+    @apply bg-[#d0d0d0] hover:bg-black dark:bg-cyan-400 dark:hover:bg-white hover:scale-110 transition duration-1000;
   }
 
   .custom-box {
-    @apply flex flex-col p-4 h-45 w-45 rounded-2xl justify-center items-center bg-[#f8f8f8] text-[#29292c] hover:scale-105 
-      transition-all duration-1000 dark:bg-cyan-400 dark:hover:bg-white shadow-md dark:hover:shadow-white/50;
+    @apply bg-[#d0d0d0] hover:bg-black text-white dark:text-[#29292c] dark:bg-cyan-400 dark:hover:bg-white dark:hover:shadow-white/50 flex flex-col p-4 h-45 w-45 rounded-2xl justify-center items-center hover:scale-105 
+      transition-all duration-1000 shadow-md;
   }
 
   .custom-date {
-    @apply relative inline-block items-center bg-cyan-500 text-white px-4 py-2 rounded-l-lg before:content-[''] 
+    @apply bg-[#d0d0d0] text-black dark:bg-cyan-500 dark:text-white relative inline-block items-center px-4 py-2 rounded-l-lg before:content-[''] 
     before:absolute before:-right-2 before:top-1/2 before:-translate-y-1/2 before:w-0 before:h-0 before:border-l-[10px] 
-    before:border-l-cyan-500 before:border-y-[8px] before:border-y-transparent;
+    before:border-l-[#d0d0d0] dark:before:border-l-cyan-500 before:border-y-[8px] before:border-y-transparent;
   }
 
   .custom-contact {
-    @apply flex w-75 border-2 p-3 rounded-lg border-cyan-400 text-cyan-400 text-center items-center justify-center gap-3;
+    @apply border-white text-white dark:border-cyan-400 dark:text-cyan-400 flex w-75 border-2 p-3 rounded-lg text-center items-center justify-center gap-3;
   }
 
   .custom-logo {
-    @apply fill-[#26C6DA] hover:fill-white hover:scale-115 transition-all duration-1000;
+    @apply fill-white hover:fill-black dark:fill-cyan-400 dark:hover:fill-white hover:scale-115 transition-all duration-1000;
   }
 
-  .custom-svg {
-    @apply fill-[#26C6DA];
+  .custom-svg-1 {
+    @apply fill-[#d0d0d0] dark:fill-cyan-400;
+  }
+
+  .custom-svg-2 {
+    @apply fill-white dark:fill-cyan-400;
   }
 }
 
