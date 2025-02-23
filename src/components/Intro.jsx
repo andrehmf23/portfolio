@@ -1,12 +1,17 @@
 
 function Intro() {
+
+  const handleClick = () => {
+    window.open("https://www.linkedin.com/in/andrehmf23/", "_blank"); // Abre em nova aba
+  };
+
   return (
     <>
     {/* ----------------- Intro ----------------- */}
     <div class="flex h-screen gap-4 items-center justify-center pt-20">
         <div class="p-4">
             <span class="text-4xl font-extralight">I'M <span class="custom-hover-text text-5xl">André HMF</span> <br />Full Stack Developer</span>
-            <br /><button class="mt-3 custom-button">Contact me</button>
+            <br /><button class="mt-3 custom-button" onClick={handleClick}>Contact me</button>
         </div>
         <img class="h-130 rounded-full shadow-amber-50 bg-gray-950/50" src="Im.png" alt="I"/>
 
