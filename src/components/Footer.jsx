@@ -8,7 +8,7 @@ function Footer() {
             <span id="contact" class="text-3xl font-bold" style={{ scrollMarginTop: "120px" }}>Contact me</span>
             
             {/* ----------------- Par ----------------- */}
-            <div class="grid grid-cols-2 gap-9 mt-10">
+            <div class="flex flex-wrap p-5 gap-5 items-center justify-center">
                 <div className="custom-contact">
                     <svg class="h-7 custom-svg-2" viewBox="0 -2.5 20 20" version="1.1">
                         <g id="SVGRepo_bgCarrier"></g>

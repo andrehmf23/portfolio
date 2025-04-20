@@ -32,11 +32,12 @@
 /* Definição de temas claro e escuro */
 @layer base {
   body {
-    @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url('/bg.jpg')] bg-repeat bg-[length:1600px] font-mono;
+    @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url('/bg.jpg')] bg-repeat bg-[length:1600px] font-mono min-h-screen;
   }
 
   header {
-    @apply bg-[#d0d0d0] dark:bg-gray-950 w-full fixed top-0 left-0 flex justify-center items-center p-4 h-25 gap-20 z-100;
+    @apply bg-[#d0d0d0] dark:bg-gray-950 min-w-screen fixed top-0 left-0 flex justify-start items-center 
+    h-25 pl-5 pr-5 gap-2 z-100;
   }
 
   .filter {
@@ -60,7 +61,7 @@
   }
 }
 
-
+/* Estilização de botões e outros componentes */
 @layer components {
 
   .scale {
@@ -81,8 +82,10 @@
   }
 
   .custom-box {
-    @apply bg-[#d0d0d0] hover:bg-black text-white dark:text-[#29292c] dark:bg-cyan-400 dark:hover:bg-white dark:hover:shadow-white/50 flex flex-col p-4 h-45 w-45 rounded-2xl justify-center items-center hover:scale-105 
-      transition-all duration-1000 shadow-md;
+    @apply bg-[#d0d0d0] hover:bg-black text-white dark:text-[#29292c] dark:bg-cyan-400 dark:hover:bg-white 
+    dark:hover:shadow-white/50 flex flex-col p-4 sm:h-45 sm:w-45 h-30 w-30 
+    rounded-2xl justify-center items-center hover:scale-105 
+    transition-all duration-1000 shadow-md;
   }
 
   .custom-date {
@@ -92,7 +95,8 @@
   }
 
   .custom-contact {
-    @apply border-white text-white dark:border-cyan-400 dark:text-cyan-400 flex w-75 border-2 p-3 rounded-lg text-center items-center justify-center gap-3;
+    @apply border-white text-white dark:border-cyan-400 dark:text-cyan-400 flex w-75 border-2 p-3 rounded-lg 
+    text-center items-center justify-center gap-3;
   }
 
   .custom-logo {

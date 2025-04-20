@@ -13,16 +13,16 @@ function Skills() {
 
   return (
     <>
-    <div class="flex flex-col ml-10 mr-10 mt-10 items-center justify-center">
+    <div class="flex flex-col p-5 items-center justify-center">
         <span class="text-3xl font-bold">My Skills</span>
-        <div class="flex flex-wrap gap-6 mt-5 justify-center pl-40 pr-40">
+        <div class="flex flex-wrap gap-4 mt-5 justify-center">
             
             {/* ----------------- Skill Example ----------------- */}
             {skills.map((skill) => (
-              <div class=" custom-box">
-                  <img class="h-20 w-20 m-1" src={`icons-skill/${skill.code}.png`} alt="" />
-                  <span class="font-bold text-xl uppercase">{skill.name}</span>
-                  <span class="font-bold text-xl">{skill.time}</span>
+              <div class="custom-box">
+                  <img class="h-[60%] w-[60%] m-1" src={`icons-skill/${skill.code}.png`} alt="" />
+                  <span class="font-bold text-2xl sm:text-xl uppercase">{skill.name}</span>
+                  <span class="font-bold text-1xl sm:text-xl">{skill.time}</span>
               </div>
             ))}
             

@@ -4,7 +4,7 @@ function Header() {
       <>
         <header>
           {/* Logo Icon */}
-          <a href="/" className="icon w-12 h-12 absolute left-15 top-5">
+          <a href="/" className="icon w-12 h-12">
           <svg
             viewBox="0 0 16 16"
             version="1.1"
@@ -19,9 +19,11 @@ function Header() {
           </a>
   
           {/* Navigation Links */}
-          <a href="#about" className="scale">About</a>
-          <a href="#portfolio" className="scale">Portfolio</a>
-          <a href="#contact" className="scale">Contact</a>
+          <div className="flex flex-1 items-center justify-center gap-5">
+            <a href="#about" className="scale">About</a>
+            <a href="#portfolio" className="scale">Portfolio</a>
+            <a href="#contact" className="scale">Contact</a>
+          </div>
         </header>
       </>
     );

@@ -3,7 +3,7 @@ function About() {
   return (
     <>
         {/* ----------------- About ----------------- */}
-        <div class="ml-20 mr-20 mt-15 content-center items-center justify-center">
+        <div class="p-5 content-center items-center justify-center">
             <span id="about" class="text-3xl font-bold" style={{ scrollMarginTop: "120px" }}>About me</span>
             <div class="items-center justify-center mt-5">
               <hr class="inline-block mb-1 h-[2px] w-8"></hr>

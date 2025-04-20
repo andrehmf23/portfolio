@@ -13,7 +13,7 @@ function Experience() {
 
   return (
     <>
-    <div class="flex flex-col ml-10 mr-10 mt-10 items-center justify-center">
+    <div class="flex flex-col p-5 items-center justify-center">
         <span class="text-3xl font-bold mb-5">Experience</span>
         {data.map((content) => (
         <>
@@ -21,14 +21,17 @@ function Experience() {
             
             {/* ----------------- Experience Example ----------------- */}
 
-            <div class="flex flex-row items-start justify-center">
+            <div class="hidden flex-row items-start justify-center sm:flex">
                 <div className="custom-date">
                     <span className="text-sm font-bold">{content.date}</span>
                 </div>
             </div>
             <div class="flex flex-col ml-5 mt-2.5 items-center justify-center">
-                <hr className="h-7 w-5"></hr>
-                <hr className="mt-5 h-full w-[4px]"></hr>
+                <div className="flex flex-row items-center justify-center">
+                    <hr className="hidden sm:block h-5 w-5"/>
+                    <span className="custom-button sm:hidden">{content.date}</span>
+                </div>
+                <hr className="flex-1 mt-5 w-0.75"/>
             </div>
             <div class="flex flex-col ml-4">
                     <span class="text-2xl font-bold mb-1">{content.title}</span>

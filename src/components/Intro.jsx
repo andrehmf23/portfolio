@@ -8,15 +8,17 @@ function Intro() {
   return (
     <>
     {/* ----------------- Intro ----------------- */}
-    <div class="flex h-screen gap-4 items-center justify-center pt-20">
+    <div class="flex flex-col sm:flex-row items-center justify-center pt-30">
+      <div class="flex items-center">
         <div class="p-4">
-            <span class="text-4xl font-extralight">I'M <span class="custom-hover-text text-5xl">André HMF</span> <br />Full Stack Developer</span>
-            <br /><button class="mt-3 custom-button" onClick={handleClick}>Contact me</button>
+            <span class="text-2xl sm:text-5xl font-extralight">I'M <span class="custom-hover-text text-3xl sm:text-5xl">André HMF</span> <br />Full Stack Developer</span>
+            <br />
+            <button class="mt-3 custom-button" onClick={handleClick}>Contact me</button>
         </div>
-        <img class="h-130 rounded-full shadow-amber-50 bg-gray-950/50" src="Im.png" alt="I"/>
-
-        <div class="justify-center items-center flex flex-col gap-5">
-          <hr class="h-40 w-0.5"></hr>
+        <img class="h-50 sm:h-120 rounded-full shadow-amber-50 bg-gray-950/50" src="Im.png" alt="I"/>
+      </div>
+        <div class="justify-center items-center flex flex-row sm:flex-col gap-5">
+          <hr class="sm:h-40 sm:w-0.5 h-0.5 w-40"></hr>
 
           <a href="https://github.com/andrehmf23" target="_blank" rel="noopener noreferrer">
           <svg className="h-8 custom-svg-1" viewBox="0 0 20 20" version="1.1">
