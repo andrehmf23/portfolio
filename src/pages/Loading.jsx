@@ -1,8 +1,9 @@
-
 export default function Loading() {
     return (
         <>
-            <div className="filter"></div>
+            {/* Se você precisar de um filtro visual, adicione o valor necessário. Caso contrário, remova essa classe */}
+            <div className="filter"></div> 
+
             <div className="flex min-h-screen justify-center items-center">
                 <h1 className="relative text-6xl font-bold text-black dark:text-cyan-400">
                     Loading
@@ -12,5 +13,5 @@ export default function Loading() {
                 </h1>
             </div>
         </>
-    )
+    );
 }
