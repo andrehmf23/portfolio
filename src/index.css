@@ -1,15 +1,10 @@
 @import "tailwindcss";
 
+/* Animação */
 @keyframes dot-pulse {
-  0% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  }
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .dot-anim {
@@ -17,27 +12,28 @@
   display: inline-block;
 }
 
-.dot-anim:nth-child(1) {
-  animation-delay: 0s;
-}
+.dot-anim:nth-child(1) { animation-delay: 0s; }
+.dot-anim:nth-child(2) { animation-delay: 0.5s; }
+.dot-anim:nth-child(3) { animation-delay: 1s; }
 
-.dot-anim:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.dot-anim:nth-child(3) {
-  animation-delay: 1s;
-}
-
-/* Definição de temas claro e escuro */
+/* Variáveis de tema */
 @layer base {
+  :root {
+    --color-light-bg: #d0d0d0;
+    --color-dark-bg: theme('colors.gray.950');
+    --color-light-text: #d0d0d0;
+    --color-dark-text: theme('colors.cyan.400');
+    --color-button-dark-bg: theme('colors.cyan.400');
+    --color-button-dark-hover: white;
+  }
+
   body {
     @apply text-gray-900 dark:text-gray-100 transition-colors bg-[url('/bg.jpg')] bg-repeat bg-[length:1600px] font-mono min-h-screen;
   }
 
   header {
-    @apply bg-[#d0d0d0] dark:bg-gray-950 min-w-screen fixed top-0 left-0 flex justify-start items-center 
-    h-25 pl-5 pr-5 gap-2 z-100;
+    background-color: var(--color-light-bg);
+    @apply dark:bg-gray-950 min-w-screen fixed top-0 left-0 flex justify-start items-center h-25 pl-5 pr-5 gap-2 z-100;
   }
 
   .filter {
@@ -45,53 +41,61 @@
   }
 
   .sub-footer {
+    background-image: linear-gradient(to bottom, var(--color-light-bg), var(--color-light-bg));
     @apply to-[#d0d0d0] dark:to-gray-950 w-full h-40 bg-gradient-to-b;
   }
-  
+
   footer {
-    @apply bg-[#d0d0d0] dark:bg-gray-950 w-full flex flex-col justify-center items-center p-5 pb-15;
+    background-color: var(--color-light-bg);
+    @apply dark:bg-gray-950 w-full flex flex-col justify-center items-center p-5 pb-15;
   }
 
   a {
     @apply text-white hover:text-black dark:text-cyan-400 dark:hover:text-white font-bold;
   }
-  
+
   hr {
-    @apply bg-[#d0d0d0] border-[#d0d0d0] dark:bg-cyan-400 dark:border-cyan-400 rounded-full;
+    background-color: var(--color-light-bg);
+    border-color: var(--color-light-bg);
+    @apply dark:bg-cyan-400 dark:border-cyan-400 rounded-full;
   }
 }
 
-/* Estilização de botões e outros componentes */
+/* Componentes */
 @layer components {
-
   .scale {
     @apply duration-1000 transform hover:scale-110;
   }
 
   .custom-button {
-    @apply bg-[#d0d0d0] text-black dark:hover:shadow-white/50 dark:bg-cyan-400 dark:hover:bg-white 
+    background-color: var(--color-light-bg);
+    @apply text-black dark:hover:shadow-white/50 dark:bg-cyan-400 dark:hover:bg-white 
     p-2 rounded-lg hover:scale-105 transition-all duration-1000 shadow-md;
   }
-  
+
   .custom-hover-text {
-    @apply text-[#d0d0d0] hover:text-black dark:text-cyan-400 dark:hover:text-white font-bold transition duration-1000;
+    color: var(--color-light-text);
+    @apply hover:text-black dark:text-cyan-400 dark:hover:text-white font-bold transition duration-1000;
   }
 
   .custom-hover {
-    @apply bg-[#d0d0d0] hover:bg-black dark:bg-cyan-400 dark:hover:bg-white hover:scale-110 transition duration-1000;
+    background-color: var(--color-light-bg);
+    @apply hover:bg-black dark:bg-cyan-400 dark:hover:bg-white hover:scale-110 transition duration-1000;
   }
 
   .custom-box {
-    @apply bg-[#d0d0d0] hover:bg-black text-white dark:text-[#29292c] dark:bg-cyan-400 dark:hover:bg-white 
+    background-color: var(--color-light-bg);
+    @apply hover:bg-black text-white dark:text-[#29292c] dark:bg-cyan-400 dark:hover:bg-white 
     dark:hover:shadow-white/50 flex flex-col p-4 sm:h-45 sm:w-45 h-30 w-30 
     rounded-2xl justify-center items-center hover:scale-105 
     transition-all duration-1000 shadow-md;
   }
 
   .custom-date {
-    @apply bg-[#d0d0d0] text-black dark:bg-cyan-500 dark:text-white relative inline-block items-center px-4 py-2 rounded-l-lg before:content-[''] 
+    background-color: var(--color-light-bg);
+    @apply text-black dark:bg-cyan-500 dark:text-white relative inline-block items-center px-4 py-2 rounded-l-lg before:content-[''] 
     before:absolute before:-right-2 before:top-1/2 before:-translate-y-1/2 before:w-0 before:h-0 before:border-l-[10px] 
-    before:border-l-[#d0d0d0] dark:before:border-l-cyan-500 before:border-y-[8px] before:border-y-transparent;
+    before:border-l-[var(--color-light-bg)] dark:before:border-l-cyan-500 before:border-y-[8px] before:border-y-transparent;
   }
 
   .custom-contact {
@@ -104,7 +108,8 @@
   }
 
   .custom-svg-1 {
-    @apply fill-[#d0d0d0] dark:fill-cyan-400;
+    fill: var(--color-light-bg);
+    @apply dark:fill-cyan-400;
   }
 
   .custom-svg-2 {
@@ -112,7 +117,7 @@
   }
 }
 
-/* Estrutura flexível */
+/* Utilidades */
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
