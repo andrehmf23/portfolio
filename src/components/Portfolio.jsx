@@ -1,14 +1,4 @@
-import React, { useEffect, useState } from "react";
-
-function Portfolio() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/portfolio.json") // Carrega o JSON local da pasta public
-      .then((res) => res.json())
-      .then((data) => setData(data))
-      .catch((err) => console.error("Erro ao carregar JSON:", err));
-  }, []);
+function Portfolio({ data }) {
 
   const handleClick = () => {
     window.open("https://github.com/andrehmf23", "_blank"); // Abre em nova aba
@@ -22,11 +12,11 @@ function Portfolio() {
           className="text-3xl font-bold"
           style={{ scrollMarginTop: "120px" }}
         >
-          Portfolio
+          {data.title}
         </span>
 
         <div className="flex flex-wrap gap-5 mt-5 justify-center items-center">
-          {data.map((content, index) => (
+          {data.data.map((content, index) => (
             <a
               key={index} // Adicionando key única para cada item
               href={`${content.href}`}

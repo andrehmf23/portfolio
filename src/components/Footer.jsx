@@ -1,4 +1,4 @@
-function Footer() {
+function Footer({ data }) {
     return (
       <>
         <div className="sub-footer" />
@@ -8,7 +8,7 @@ function Footer() {
             className="text-3xl font-bold"
             style={{ scrollMarginTop: "120px" }}
           >
-            Contact me
+            {data.contact}
           </span>
   
           {/* ----------------- Par ----------------- */}

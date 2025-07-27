@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from "react";
-
-function Experience() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/experience.json") // Carrega o JSON local da pasta public
-      .then((res) => res.json())
-      .then((data) => setData(data))
-      .catch((err) => console.error("Erro ao carregar JSON:", err));
-  }, []);
-
+function Experience({ data }) {
   return (
     <div className="flex flex-col p-5 items-center justify-center">
-      <span className="text-3xl font-bold mb-5">Experience</span>
-      {data.map((content, index) => (
+      <span className="text-3xl font-bold mb-5">{data.title}</span>
+      {data.data.map((content, index) => (
         <div key={index} className="flex mt-4">
           {/* ----------------- Experience Example ----------------- */}
           <div className="hidden flex-row items-start justify-center sm:flex">

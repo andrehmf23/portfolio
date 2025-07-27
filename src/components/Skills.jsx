@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from "react";
-
-function Skills() {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/skills.json") // Carrega o JSON local da pasta public
-      .then((res) => res.json())
-      .then((data) => setSkills(data))
-      .catch((err) => console.error("Erro ao carregar JSON:", err));
-  }, []);
+function Skills({ data }) {
 
   return (
     <div className="flex flex-col p-5 items-center justify-center">
-      <span className="text-3xl font-bold">My Skills</span>
+      <span className="text-3xl font-bold">{data.title}</span>
       <div className="flex flex-wrap gap-4 mt-5 justify-center">
         {/* ----------------- Skill Example ----------------- */}
-        {skills.map((skill, index) => (
+        {data.data.map((skill, index) => (
           <div key={index} className="custom-box">
             <img
               className="h-[60%] w-[60%] m-1"

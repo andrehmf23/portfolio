@@ -1,6 +1,4 @@
-import React from "react";
-
-function Intro() {
+function Intro({ data }) {
   const handleClick = () => {
     window.open("https://www.linkedin.com/in/andrehmf23/", "_blank"); // Abre em nova aba
   };
@@ -12,10 +10,10 @@ function Intro() {
         <div className="flex items-center">
           <div className="p-4">
             <span className="text-2xl sm:text-5xl font-extralight">
-              I'M <span className="custom-hover-text text-3xl sm:text-5xl">André HMF</span> <br />Full Stack Developer
+              {data.greeting} <span className="custom-hover-text text-3xl sm:text-5xl">André HMF</span> <br />{data.job}
             </span>
             <br />
-            <button className="mt-3 custom-button" onClick={handleClick}>Contact me</button>
+            <button className="mt-3 custom-button" onClick={handleClick}>{data.contact}</button>
           </div>
           <img className="h-50 sm:h-120 rounded-full shadow-amber-50 bg-gray-950/50" src="Im.png" alt="André HMF"/>
         </div>

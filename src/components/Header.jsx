@@ -1,4 +1,4 @@
-function Header() {
+function Header({ data }) {
   return (
     <>
       <header>
@@ -15,9 +15,9 @@ function Header() {
 
         {/* Navigation Links */}
         <div className="flex flex-1 items-center justify-center gap-5">
-          <a href="#about" className="scale">About</a>
-          <a href="#portfolio" className="scale">Portfolio</a>
-          <a href="#contact" className="scale">Contact</a>
+          <a href="#about" className="scale">{data.about}</a>
+          <a href="#portfolio" className="scale">{data.projects}</a>
+          <a href="#contact" className="scale">{data.contact}</a>
         </div>
       </header>
     </>

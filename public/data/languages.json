@@ -1,0 +1,220 @@
+{
+  "pt-BR": {
+    "shortcut": {
+      "about" : "Sobre mim", 
+      "contact": "Contato", 
+      "projects": "Projetos"
+    },
+    "title": {
+      "greeting": "Sou", 
+      "job": "desenvolvedor Full-Stack", 
+      "contact": "Contate-me"
+    },
+    "about": {
+      "title" : "Sobre mim",
+      "description" : "Estudante em constante evolução, com foco no desenvolvimento Full-Stack e interesse por software, jogos, websites e muito mais. <br /> Possuo experiência com diversas linguagens e tecnologias, incluindo C, C++, HTML, JavaScript, CSS, Java, React e bancos de dados SQL (Oracle e MySQL). <br /> Atualmente, aprofundo meus conhecimentos em Python, Inteligência Artificial e Machine Learning, porém sempre aberto a novas ferramentas e tendências no universo do desenvolvimento."
+    },
+    "skills": {
+      "title": "Minhas habilidades",
+      "data": [
+          {
+              "code": "c",
+              "name": "c",
+              "time": "1 year"
+          },
+          {
+              "code": "c++",
+              "name": "c++",
+              "time": "3 years"
+          },
+          {
+              "code": "python",
+              "name": "python",
+              "time": "2 years"
+          },
+          {
+              "code": "html",
+              "name": "html",
+              "time": "1 year"
+          },
+          {
+              "code": "js",
+              "name": "javascript",
+              "time": "1 year"
+          },
+          {
+              "code": "css",
+              "name": "css",
+              "time": "1 year"
+          },
+          {
+              "code": "java",
+              "name": "java",
+              "time": "1 year"
+          },
+          {
+              "code": "react",
+              "name": "react",
+              "time": "1 year"
+          },
+          {
+              "code": "sql",
+              "name": "sql",
+              "time": "1 year"
+          }
+      ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "data" : [
+          {
+              "img": "Xadrez",
+              "href": "https://ludus-mu.vercel.app/"
+          },
+          {
+              "img": "MathScope",
+              "href": "https://mathscope.vercel.app/"
+          },
+          {
+              "img": "InfoLocal",
+              "href": "https://info-local23.vercel.app/"
+          }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "data": [
+          {
+              "date": "2024",
+              "title": "Ludus",
+              "subtitle": "Barão de mauá",
+              "type": "atividade",
+              "description": "Nesse projeto tentamos implementar em grupo um jogo de Xadrez online, tendo em conta a biblioteca React em conjunto com o framework Vite, utilizando as APIs: Express para criação do servidor e a Socket.io para conexão simultânea. Como a implementação foi feita localmente tanto do servidor quanto do banco em MySQL não é possivel ver o funcionamento completo."
+          },
+          {
+              "date": "2024",
+              "title": "MathScope",
+              "subtitle": "Imersão alura",
+              "type": "autônomo",
+              "description": "Este é um website simples, desenvolvido para pesquisa e exploração de conteúdos de matemática. Criado como parte da Imersão Alura 2024, teve como objetivo o aprimoramento dos meus conhecimentos em desenvolvimento web. O conteúdo disponibilizado foi gerado por Inteligência Artificial e não é sincronizado em tempo real."
+          },
+          {
+              "date": "2025",
+              "title": "InfoLocal",
+              "subtitle": "Próprio",
+              "type": "autônomo",
+              "description": "Este Website tem o objetivo mostrar a localização e temperatura de um país, estado ou cidade, além de mostrar a bandeira e as estátisticas do país, é coletado informações de 4 APIs diferentes que são interconectadas na aplicação web."
+          }
+        ]
+      }
+    },
+    "en-US": {
+    "shortcut": {
+      "about": "About me",
+      "contact": "Contact",
+      "projects": "Projects"
+    },
+    "title": {
+      "greeting": "I'm",
+      "job": "Full-Stack Developer",
+      "contact": "Contact me"
+    },
+    "about": {
+      "title": "About me",
+      "description": "A constantly evolving student focused on Full-Stack development, with interests in software, games, websites, and more. <br /> I have experience with various languages and technologies, including C, C++, HTML, JavaScript, CSS, Java, React, and SQL databases (Oracle and MySQL). <br /> Currently, I'm deepening my knowledge in Python, Artificial Intelligence, and Machine Learning, while remaining open to new tools and trends in the development world."
+    },
+    "skills": {
+      "title": "My skills",
+      "data": [
+        {
+          "code": "c",
+          "name": "c",
+          "time": "1 year"
+        },
+        {
+          "code": "c++",
+          "name": "c++",
+          "time": "3 years"
+        },
+        {
+          "code": "python",
+          "name": "python",
+          "time": "2 years"
+        },
+        {
+          "code": "html",
+          "name": "html",
+          "time": "1 year"
+        },
+        {
+          "code": "js",
+          "name": "javascript",
+          "time": "1 year"
+        },
+        {
+          "code": "css",
+          "name": "css",
+          "time": "1 year"
+        },
+        {
+          "code": "java",
+          "name": "java",
+          "time": "1 year"
+        },
+        {
+          "code": "react",
+          "name": "react",
+          "time": "1 year"
+        },
+        {
+          "code": "sql",
+          "name": "sql",
+          "time": "1 year"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "data": [
+        {
+          "img": "Xadrez",
+          "href": "https://ludus-mu.vercel.app/"
+        },
+        {
+          "img": "MathScope",
+          "href": "https://mathscope.vercel.app/"
+        },
+        {
+          "img": "InfoLocal",
+          "href": "https://info-local23.vercel.app/"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "data": [
+        {
+          "date": "2024",
+          "title": "Ludus",
+          "subtitle": "Barão de Mauá",
+          "type": "academic activity",
+          "description": "In this group project, we aimed to implement an online chess game using React together with the Vite framework, and APIs like Express (server) and Socket.io (real-time communication). Since both the server and MySQL database were implemented locally, full functionality cannot be viewed online."
+        },
+        {
+          "date": "2024",
+          "title": "MathScope",
+          "subtitle": "Alura Immersion",
+          "type": "independent",
+          "description": "This is a simple website developed for searching and exploring mathematics-related content. Created as part of Alura Immersion 2024, it served to enhance my web development skills. The content was generated by Artificial Intelligence and is not updated in real time."
+        },
+        {
+          "date": "2025",
+          "title": "InfoLocal",
+          "subtitle": "Personal",
+          "type": "independent",
+          "description": "This website shows the location and temperature of a country, state, or city, along with the flag and statistics of the country. It gathers data from 4 different APIs interconnected in the web application."
+        }
+      ]
+    }
+  }
+}
