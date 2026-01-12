@@ -3,15 +3,17 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
+  plugins: [react(), tailwindcss()],
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 100,
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // Agora @ aponta para a pasta src
     },
   },
-})
+});

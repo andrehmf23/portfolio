@@ -9,11 +9,10 @@ function Skills({ data }) {
           <div key={index} className="custom-box">
             <img
               className="h-[60%] w-[60%] m-1"
-              src={`icons-skill/${skill.code}.png`}
-              alt={skill.name}
+              src={`icons-skill/${skill}.png`}
+              alt={skill}
             />
-            <span className="font-bold text-2xl sm:text-xl uppercase">{skill.name}</span>
-            <span className="font-bold text-1xl sm:text-xl">{skill.time}</span>
+            <span className="font-bold text-2xl sm:text-xl uppercase">{skill}</span>
           </div>
         ))}
         {/* ----------------- Skill End ---------------- */}
